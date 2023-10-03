@@ -1,16 +1,17 @@
-import { List } from "@mui/material";
-import { ListsItem } from "../atomos/ListsItem";
+import { ListButton } from "../atomos/ListButton";
 
 const items = ["Profile", "Skill", "Carrer", "Production"];
 
 export const Sitemap = () => {
   return (
-    <div className="sitemap">
-      <List>
+    <div>
+      <ul className="flex flex-wrap">
         {items.map((item) => (
-          <ListsItem message={item} />
+          <li key={item} className="grow">
+            <ListButton message={item} />
+          </li>
         ))}
-      </List>
+      </ul>
     </div>
   );
 };
