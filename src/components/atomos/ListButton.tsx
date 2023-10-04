@@ -8,7 +8,7 @@ export const ListButton = (props: props) => {
   const { message } = props;
   return (
     <div className="text-center">
-      <Button variant="text">{message}</Button>
+      <Button color="inherit">{message}</Button>
     </div>
   );
 };
