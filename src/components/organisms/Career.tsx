@@ -1,3 +1,9 @@
+import { HeadingTxt } from "../atomos/HeadingTxt";
+
 export const Career = () => {
-  return <div>Career</div>;
+  return (
+    <>
+      <HeadingTxt message="Carrer" />
+    </>
+  );
 };

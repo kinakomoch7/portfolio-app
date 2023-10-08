@@ -1,3 +1,9 @@
+import { HeadingTxt } from "../atomos/HeadingTxt";
+
 export const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <HeadingTxt message="Contact" />
+    </>
+  );
 };
