@@ -1,3 +1,9 @@
+import { HeadingTxt } from "../atomos/HeadingTxt";
+
 export const Skill = () => {
-  return <div>Skill</div>;
+  return (
+    <>
+      <HeadingTxt message="Skill" />
+    </>
+  );
 };

@@ -1,9 +1,9 @@
+import { HeadingTxt } from "../atomos/HeadingTxt";
+
 export const Production = () => {
   return (
     <>
-      <div></div>
-      <div></div>
-      <div></div>
+      <HeadingTxt message="Production" />
     </>
   );
 };

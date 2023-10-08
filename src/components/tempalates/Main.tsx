@@ -2,6 +2,7 @@ import { Career } from "../organisms/Career";
 import { Contact } from "../organisms/Contact";
 import { Footer } from "../organisms/Footer";
 import { Header } from "../organisms/Header";
+import { Production } from "../organisms/Production";
 import { Profile } from "../organisms/Profile";
 import { Skill } from "../organisms/Skill";
 
@@ -10,6 +11,7 @@ export const Main = () => {
     <>
       <Header />
       <Profile />
+      <Production />
       <Skill />
       <Career />
       <Contact />
