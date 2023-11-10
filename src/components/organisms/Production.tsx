@@ -1,13 +1,13 @@
 import { Card, Container, Grid } from "@mui/material";
-import { HeadingTxt } from "../atomos/HeadingTxt";
 import { ProductCard } from "../molecules/ProductCard";
+import { Typo } from "../atomos/Typo";
 
 export const Production = () => {
   return (
     <>
       <Container>
         <Card>
-          <HeadingTxt message="Production" />
+          <Typo children='Production' />
           <Grid container spacing={{ xs: 1, md: 2 }}>
             <ProductCard message="todoApp" cardText="これはtodoアプリです" />
             <ProductCard

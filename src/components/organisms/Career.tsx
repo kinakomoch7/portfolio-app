@@ -1,9 +1,9 @@
-import { HeadingTxt } from "../atomos/HeadingTxt";
+import { Typo } from "../atomos/Typo";
 
 export const Career = () => {
   return (
     <>
-      <HeadingTxt message="Carrer" />
+      <Typo children='Career' />
     </>
   );
 };

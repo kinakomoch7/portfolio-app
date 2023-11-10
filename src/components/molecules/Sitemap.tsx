@@ -1,4 +1,4 @@
-import { ListButton } from "../atomos/ListButton";
+import { NButton } from "../atomos/NButton";
 
 const items = ["Profile", "Skill", "Carrer", "Production"];
 
@@ -7,8 +7,8 @@ export const Sitemap = () => {
     <div>
       <ul className="flex flex-wrap">
         {items.map((item) => (
-          <li key={item} className="grow">
-            <ListButton message={item} />
+          <li key={item} className="grow text-center">
+            <NButton color="inherit" children={item} />
           </li>
         ))}
       </ul>

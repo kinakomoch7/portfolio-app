@@ -1,15 +1,22 @@
-import { Toolbar } from "@mui/material";
-import { HeaderTypo } from "../atomos/HeaderTypo";
-import { MIcon } from "../atomos/MIcon";
-import { ListButton } from "../atomos/ListButton";
+import { IconButtonProps, Toolbar } from "@mui/material";
+import { NIcon } from "../atomos/NIcon";
+import { Typo } from "../atomos/Typo";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export const ToolBar = () => {
+
+  const IButtonProps: IconButtonProps = {
+    color: 'inherit',
+    size: 'large',
+    edge: 'start',
+    sx: { mr: 2 }
+  }
+
   return (
     <>
       <Toolbar>
-        <MIcon />
-        <HeaderTypo />
-        <ListButton message="Login" />
+        <NIcon IButtonProps={ {...IButtonProps} } icon={<MenuIcon />} />
+        <Typo children='Koide Tomoki Portfolio' variant="h6" component="div" sx={{ flexGrow: 1 }}/>
       </Toolbar>
     </>
   );

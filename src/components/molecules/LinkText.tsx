@@ -1,4 +1,5 @@
-import { Links } from "../atomos/Links";
+import { NLink } from "../atomos/NLink";
+import { Typo } from "../atomos/Typo";
 
 type Props = {
   message: string;
@@ -11,8 +12,8 @@ export const LinkText = (props: Props) => {
 
   return (
     <div className="flex">
-      <p>{message}</p>
-      <Links link={link} linkText={linkTxt} />
+      <Typo children={message} />
+      <NLink about={link} children={linkTxt} />
     </div>
   );
 };

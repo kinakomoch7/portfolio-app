@@ -1,7 +1,6 @@
-import { Grid, Card, CardMedia } from "@mui/material";
-import { HeadingTxt } from "../atomos/HeadingTxt";
-import { CardContents } from "../atomos/CardContents";
+import { Grid, Card, CardMedia, CardContent } from "@mui/material";
 import icon from "../../common/images/icon.png";
+import { Typo } from "../atomos/Typo";
 
 type Props = {
   message: string;
@@ -15,9 +14,9 @@ export const ProductCard = (props: Props) => {
     <>
       <Grid item xs={12} md={6}>
         <Card>
-          <HeadingTxt message={message} />
+          <Typo children={message} />
           <CardMedia style={{ height: 0, paddingTop: "56.25%" }} image={icon} />
-          <CardContents text={cardText} />
+          <CardContent><Typo children={cardText} /></CardContent>
         </Card>
       </Grid>
     </>
