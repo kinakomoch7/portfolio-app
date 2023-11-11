@@ -1,6 +1,7 @@
-import { Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import { NLink } from "../atomos/NLink";
 import { Typo } from "../atomos/Typo";
+import { contentStyle } from "../../common/styles/contents";
 
 type Props = {
   message: string;
@@ -12,10 +13,13 @@ export const LinkText = (props: Props) => {
   const { message, link, linkTxt } = props;
 
   return (
-    <div className="flex justify-around">
-      <Typo children={message} alignContent='center' fontFamily='serif' />
-      <Box sx={{ m:1 }} />
-      <NLink about={link} children={linkTxt} />
-    </div>
+    <Grid container spacing={2} >
+      <Grid item xs={4}>
+        <Typo children={`${message}: `} {...contentStyle} />
+      </Grid>
+      <Grid item xs={8}>
+        <NLink about={link} children={linkTxt} />
+      </Grid>
+    </Grid>
   );
 };

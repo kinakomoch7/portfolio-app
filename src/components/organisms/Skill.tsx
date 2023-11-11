@@ -14,10 +14,10 @@ export const Skill = () => {
       <Container>
         <Typo children='Skill' {...headingStyle}/>
         <Grid container spacing={{ xs: 1, sm: 2, md: 3 }}>
-          <SkillCard message="React" cardText="経験歴：1年" icon={<ReactIcon size={100} />} />
-          <SkillCard message="python" cardText="経験歴：半年" icon={<PythonIcon size={100} />}/>
-          <SkillCard message="C言語" cardText="経験歴：1年" icon={<CIcon size={100} />}/>
-          <SkillCard message="Java" cardText="経験歴：1年" icon={<JavaIcon size={100} />}/>
+          <SkillCard headText="React" careerText="1" revel={5} icon={<ReactIcon size={100} />} />
+          <SkillCard headText="python" careerText="半" revel={1} icon={<PythonIcon size={100} />}/>
+          <SkillCard headText="C言語" careerText="1" revel={3} icon={<CIcon size={100} />}/>
+          <SkillCard headText="Java" careerText="1" revel={2} icon={<JavaIcon size={100} />}/>
         </Grid>
         <Box sx={{ m:5 }} />
       </Container>
