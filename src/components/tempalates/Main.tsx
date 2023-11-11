@@ -8,7 +8,7 @@ import { Skill } from "../organisms/Skill";
 
 export const Main = () => {
   return (
-    <>
+    <div className='bg-WHITE flex flex-col space-y-10' >
       <Header />
       <Profile />
       <Production />
@@ -16,6 +16,6 @@ export const Main = () => {
       <Career />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };

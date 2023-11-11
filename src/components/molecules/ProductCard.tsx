@@ -14,7 +14,7 @@ export const ProductCard = (props: Props) => {
     <>
       <Grid item xs={12} md={6}>
         <Card>
-          <Typo children={message} />
+          <Typo children={message} align="center"/>
           <CardMedia style={{ height: 0, paddingTop: "56.25%" }} image={icon} />
           <CardContent><Typo children={cardText} /></CardContent>
         </Card>

@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { NLink } from "../atomos/NLink";
 import { Typo } from "../atomos/Typo";
 
@@ -11,8 +12,9 @@ export const LinkText = (props: Props) => {
   const { message, link, linkTxt } = props;
 
   return (
-    <div className="flex">
-      <Typo children={message} />
+    <div className="flex justify-around">
+      <Typo children={message} alignContent='center' fontFamily='serif' />
+      <Box sx={{ m:1 }} />
       <NLink about={link} children={linkTxt} />
     </div>
   );

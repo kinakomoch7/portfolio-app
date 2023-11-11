@@ -6,7 +6,12 @@ module.exports = {
     "./public/*.html",
   ],
   theme: {
-    extend: {},
+    colors:{
+      WHITE: '#FFFeFe',
+      BLACK: '#383f44',
+      DARK_PINK: 'a1588a',
+      LIGHT_PINK: 'ebd5d4'
+    }
   },
   plugins: [],
 };

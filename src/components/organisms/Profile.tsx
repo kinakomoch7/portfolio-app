@@ -1,18 +1,22 @@
 import { Avatar, Card, Container } from "@mui/material";
 import { LinkText } from "../molecules/LinkText";
 import { Typo } from "../atomos/Typo";
+import icon from '../../common/images/icon.png'
+import { headingStyle } from "../../common/styles/heading";
 
 export const Profile = () => {
   return (
     <>
       <Container>
         <Card>
-          <div className="flex-col">
-            <Typo children='Profile' />
+          <div className="flex-col bg-WHITE">
+            <Typo children='Profile' {...headingStyle} />
+
             <div className="flex justify-center">
-              <Avatar />
-              <div className="flex-col">
-                <Typo children='小出朋希' />
+              <Avatar src={icon} sx={{ width:200,  height:200 }}/>
+
+              <div className="flex-col" >
+                <Typo children='小出朋希' align="center" sx={{ fontWeight:'bolder' }} fontFamily='-moz-initial' />
                 <LinkText
                   message="GitHub"
                   link="https://github.com/kinakomoch7"
@@ -24,7 +28,9 @@ export const Profile = () => {
                   linkTxt="きなこ"
                 />
               </div>
+
             </div>
+
           </div>
         </Card>
       </Container>
