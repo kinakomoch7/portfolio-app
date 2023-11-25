@@ -13,11 +13,13 @@ export const Production = () => {
         <ProductCard
           message="port-folio-app"
           cardText="自分のポートフォリオのアプリです。フレキシブルデザインに対応しています"
-          png={ portFolioPng } />
+          png={ portFolioPng }
+          url='https://comforting-monstera-88ed68.netlify.app' />
         <ProductCard
           message="公金支出可視化app"
           cardText="TOKYO OPEN DATAにある東京の公金支出を可視化したアプリです。"
-        png={ publicFundPng }/>
+          png={ publicFundPng }
+          url="https://comforting-monstera-88ed68.netlify.app" />
       </Grid>
     </>
   );
