@@ -1,4 +1,4 @@
-import { Grid, Card, CardMedia, CardContent, Link, CardActionArea } from "@mui/material";
+import { Grid, Card, CardMedia, CardContent, CardActionArea } from "@mui/material";
 import { Typo } from "../atomos/Typo";
 import { cardHeadingStyle } from "../../common/styles/heading";
 
