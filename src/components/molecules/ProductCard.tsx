@@ -1,4 +1,4 @@
-import { Grid, Card, CardMedia, CardContent, CardActionArea } from "@mui/material";
+import { Card, CardMedia, CardContent, CardActionArea } from "@mui/material";
 import { Typo } from "../atomos/Typo";
 import { cardHeadingStyle } from "../../common/styles/heading";
 
@@ -14,15 +14,13 @@ export const ProductCard = (props: Props) => {
 
   return (
     <>
-      <Grid item xs={12} md={6}>
-        <Card>
-          <CardActionArea href={ url } >
-            <Typo children={message} align="center" {...cardHeadingStyle}/>
-            <CardMedia style={{ height: 0, paddingTop: "56.25%" }} image={png} />
-            <CardContent><Typo children={cardText} /></CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
+      <Card>
+        <CardActionArea href={ url } >
+          <Typo children={message} align="center" {...cardHeadingStyle}/>
+          <CardMedia style={{ height: 0, paddingTop: "56.25%" }} image={png} />
+          <CardContent><Typo children={cardText} /></CardContent>
+        </CardActionArea>
+      </Card>
     </>
   );
 };
