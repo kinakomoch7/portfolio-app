@@ -1,5 +1,4 @@
 import { Career } from "../organisms/Career";
-import { Contact } from "../organisms/Contact";
 import { Footer } from "../organisms/Footer";
 import { Header } from "../organisms/Header";
 import { Production } from "../organisms/Production";
@@ -14,7 +13,7 @@ export const Main = () => {
       <Production />
       <Skill />
       <Career />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

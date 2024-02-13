@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { BLACK } from "../../common/styles/colors";
 import { NButton } from "../atomos/NButton";
 
-const items = ["profile", "production", "skill", "career", "contact"];
+const items = ["profile", "production", "skill", "career"];
 
 export const Sitemap = () => {
   return (
