@@ -4,10 +4,11 @@ import { Typo } from "../atomos/Typo";
 import icon from '../../common/images/icon.png'
 import { cardHeadingStyle, headingStyle } from "../../common/styles/heading";
 import { contentStyle } from "../../common/styles/contents";
+import { Element } from "react-scroll";
 
 export const Profile = () => {
   return (
-    <>
+    <Element name='profile'>
       <Container>
         <div className="flex-col bg-WHITE">
           <Typo children='Profile' {...headingStyle} />
@@ -43,6 +44,6 @@ export const Profile = () => {
 
           </div>
       </Container>
-    </>
+    </Element>
   );
 };
